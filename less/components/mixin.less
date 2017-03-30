@@ -1,0 +1,22 @@
+﻿.clearfix () {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+.header_bg {
+	position: relative;
+	z-index: 1;
+	background-color: @gc3;
+	&:after{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -2;
+		content: "";
+		background-color: inherit;
+	}
+}

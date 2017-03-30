@@ -1,0 +1,259 @@
+
+@import 'components/variables.less';
+@import 'components/mixin.less';
+@import 'components/normalize.less';
+@import 'components/base.less';
+@import 'components/type.less';
+@import 'components/button.less';
+@import 'components/form.less';
+@import 'components/navbar.less';
+@import 'components/carousel.less';
+
+.text_block_main {
+	padding: 70px 0;
+	color: @gc4;
+	display: flex;
+	justify-content: space-between;
+}
+.text_block_text {
+	width: 58.33%;
+	h1 {
+		font-size: 22px;
+		font-family: @gf2;
+		margin: 0 0 25px;
+	}
+	p {
+		margin:  0 0 30px;
+	}
+}
+.text_block_imgwrap {
+	width: 24.47%;
+
+}
+
+.video_block {
+.header_bg
+}
+.team_block{
+.header_bg
+}
+.video_block_main {
+		height: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.video_img_wrapper {
+	display: inline-block;
+	width: 155px;
+	height: 146px;
+}
+.features_block {
+	padding: 70px 0;
+	color: @gc4;
+}
+.features_block_header {
+	font-family: @gf2;
+	
+	text-align: center;
+	padding-bottom: 3px;
+	background:  url(../img/separator2.png) center bottom no-repeat;
+	h3 {
+		text-transform: uppercase;
+		font-size: 22px;
+		margin: 0;
+
+	}
+	p {
+		font-size: 14px;
+		margin: 15px 0;
+	}
+
+}
+.features_main_block {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 0px;
+
+	li {
+		width: 32.29%;
+		height: 250px;
+		text-align: center;
+		display: inline-block;
+		border-right: 1px solid #ebebeb;
+		border-bottom: 1px solid #ebebeb;
+		font-size: 14px;
+		&:nth-child(3n) {
+			border-right: none;
+		}
+		&:nth-child(3n+1):nth-last-child(-n+3){
+  		
+			border-bottom: none;
+		}
+		&:nth-child(3n+1):nth-last-child(-n+3) ~ li {
+			border-bottom: none;
+		}
+		.features_block_wrapper{
+			height: 100%;
+				padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 75px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background: #fff url(../img/sprite.svg) -780px 30px no-repeat;
+				
+				h6 {
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: 600;
+					margin: 0 0 23px;
+					max-height: 33px;
+					overflow: hidden;
+
+				}
+				
+				p {
+					line-height: 1.6;
+					margin: 0;
+					max-height: 112px;
+					overflow: hidden;
+			
+				}
+			}
+		}
+	li.features_paint > div {
+		 background-position: -590px 25px;
+	}
+	li.features_mobile > div {
+		 background-position: -410px 25px;
+	}
+	li.features_seo > div {
+		 background-position: -230px 25px;
+	}
+	li.features_game > div {
+		 background-position: -55px 25px;
+	}
+	li.features_love > div {
+		 background-position: 125px 25px;
+	}
+}
+.team_block {
+	padding: 70px 0;
+}
+.team_block_header {
+	font-family: @gf2;
+	text-align: center;
+	padding-bottom: 3px;
+	background:  url(../img/separator2.png) center bottom no-repeat;
+	color: #fff;
+	margin-bottom: 40px;
+h4 {
+		text-transform: uppercase;
+		font-size: 22px;
+		margin: 0;
+
+	}
+	p {
+		font-size: 14px;
+		margin: 15px 0;
+	}
+}
+.team_block_main {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 50px;
+	display: flex;
+	flex-direction: row;
+  justify-content: space-around;
+}
+.team_block_item {
+	width: 23.7%;
+	border: 1px solid #747388;
+	padding: 0 0 3px;
+	text-align: center;
+	span {
+		display: block;
+		text-transform: uppercase;
+	}
+	.team_item_name {
+		font-weight: 900;
+		margin-bottom: 10px;
+		height: 16px;
+		overflow: hidden;
+	}
+	.team_item_prof {
+		font-weight: 300;
+		height: 32px;
+		overflow: hidden;
+	}
+}
+.team_item_imgwrap {
+	width: 220px;
+	height: 230px;
+	margin-bottom: 20px;
+}
+.team_block_bottom {
+	text-align: center;
+	p {
+		margin-bottom: 20px;
+	}
+	.btn {
+		margin: 0;
+	}
+}
+.gallery_block {
+	color: @gc4;
+		padding: 70px 0;
+}
+.gallery_header  {
+	padding-bottom: 70px;
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+	h4 {
+		font-family: @gf2;
+		text-transform: uppercase;
+		font-size: 22px;
+		margin: 0;
+	}
+	a {
+		color: @gc4; 
+		text-decoration: none;
+		font-weight: 300;
+		display: inline-block;
+		padding-right: 15px;
+		padding-top: 5px;
+		background:  url(../img/right.png) right center no-repeat;
+	}
+
+}
+.gallery_main {
+	margin: 0 auto 70px;
+	text-align: center;
+
+	ul {
+		max-width: 1600px;
+		display: inline-block;
+		height: 400px;
+		overflow: hidden;
+		font-size: 0px;
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			width: 265px;
+			height: 200px;
+			font-size: 14px;
+		}
+	}
+}
+.gallery_bottom {
+	text-align: center;
+	.btn{
+		margin-bottom: 0;
+	}
+}
